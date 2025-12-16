@@ -1,0 +1,84 @@
+/* Definér variable:
+https://www.w3schools.com/css/css3_variables.asp */
+
+:root {
+  /*Farver*/
+  --baggrundsfarve-primaer: #FDFCFC; 
+  --baggrundsfarve-sekundaer: #FBF9F7; 
+  --baggrundsfarve-tertiaer: #F4F0EA; 
+  --tekstfarve-faded: #AEACAB; 
+  --tekstfarve-primaer: #272626; 
+  --brand-tekstfarve-lys: #F0F5F8;
+  --brandfarve-primaer: #025B6F; 
+  --brandfarve-primaer-hover: #2E7B92; 
+  --brandfarve-primaer-click: #01404F; 
+  --sekundaer-brandfarve: #BF7C41;
+/*Skygger*/
+  --modern-box-shadow: 0 6px 12px 0 rgba(0, 0, 0, 0.08), 0 1px 3px 0 rgba(0, 0, 0, 0.10);
+  --inner-box-shadow: 0 -1px 3px 0 rgba(0, 0, 0, 0.10) inset;
+/*Font-family*/
+  --inter: "Inter", sans-serif;
+  --utopia: "Utopia-std", serif;
+
+/* Skriftstørrelser */
+  --h1-size: 40px;
+  --h2-size: 32px;
+  --h3-size: 24px;
+  --h4-size: 18px;
+  --body-size: 16px;
+}
+
+body {
+  background-color: var(--baggrundsfarve-primaer);
+  font-family: var(--inter);
+  font-size: var(--body-size);
+  color: var(--tekstfarve-primaer);
+  line-height: 1.5;
+}
+
+h1 {
+ font-family: var(--utopia);
+ font-size: var(--h1-size);
+ text-transform: uppercase;
+}
+
+h2 {
+  font-family: var(--utopia);
+  font-size: var(--h2-size);
+  text-transform: uppercase;
+}
+
+h3 {
+  font-family: var(--utopia);
+  font-size: var(--h3-size);
+  text-transform: uppercase;
+}
+
+h4 {
+  font-family: var(--utopia);
+  font-size: var(--h4-size);
+  text-transform: uppercase;
+}
+
+
+/* interne og eksterne links skifter ikke farve */
+.internt-link:hover,
+.internt-link:active,
+.internt-link:visited {
+    color: var(--tekstfarve-primaer);
+    text-decoration: underline;
+}
+
+.eksternt-link:hover,
+.eksternt-link:active,
+.eksternt-link:visited {
+    color: var(--tekstfarve-primaer);
+    text-decoration: underline;
+}
+
+/*Reset CSS*/
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
